@@ -1,0 +1,608 @@
+{
+	"info": {
+		"_postman_id": "e06faf87-e9f0-4212-9a39-2f99481fcb41",
+		"name": "Lumel Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20497244"
+	},
+	"item": [
+		{
+			"name": "Total Revenue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/revenue/total?startDate=2024-01-29&endDate=2024-05-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"revenue",
+						"total"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-01-29"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-05-01"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Total Revenue",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/revenue/total?startDate=2024-01-29&endDate=2024-05-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"revenue",
+								"total"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2024-01-29"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-05-01"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-CyB9qGgw2j7PpCManrJmLEhUHPo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Apr 2025 00:51:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalRevenue\": 1374.4675\n}"
+				}
+			]
+		},
+		{
+			"name": "Total Revenue Trends- Year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/revenue/trends?startDate=2024-01-29&endDate=2024-05-01&type=year",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"revenue",
+						"trends"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-01-29"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-05-01"
+						},
+						{
+							"key": "type",
+							"value": "year"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Total Revenue Trends Year",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/revenue/trends?startDate=2024-01-29&endDate=2024-05-01&type=year",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"revenue",
+								"trends"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2024-01-29"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-05-01"
+								},
+								{
+									"key": "type",
+									"value": "year"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3e-OGvyoELe5HC4ssfpLb3YbDcfxI0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Apr 2025 00:58:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"year\": \"2024-01-01T00:00:00.000Z\",\n        \"totalRevenue\": 1374.4675\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Total Revenue Trends- Month",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/revenue/trends?startDate=2024-01-29&endDate=2024-05-01&type=month",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"revenue",
+						"trends"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-01-29"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-05-01"
+						},
+						{
+							"key": "type",
+							"value": "month"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Total Revenue Trends- Month",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/revenue/trends?startDate=2024-01-29&endDate=2024-05-01&type=month",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"revenue",
+								"trends"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2024-01-29"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-05-01"
+								},
+								{
+									"key": "type",
+									"value": "month"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "178"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b2-0bBeHOqG8sWjBbnE8WmB/gMHkU8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Apr 2025 00:59:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"month\": \"2024-02-01T00:00:00.000Z\",\n        \"totalRevenue\": 148.976\n    },\n    {\n        \"month\": \"2024-03-01T00:00:00.000Z\",\n        \"totalRevenue\": 916\n    },\n    {\n        \"month\": \"2024-04-01T00:00:00.000Z\",\n        \"totalRevenue\": 309.4915\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Total Revenue by Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/revenue/category?startDate=2024-01-29&endDate=2024-05-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"revenue",
+						"category"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-01-29"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-05-01"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Total Revenue by Category",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/revenue/category?startDate=2024-01-29&endDate=2024-05-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"revenue",
+								"category"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2024-01-29"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-05-01"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "139"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8b-VrXWO5ziDFAL+97E0Dto7LFCnkI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Apr 2025 00:53:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"category\": \"Clothing\",\n        \"totalRevenue\": 148.976\n    },\n    {\n        \"category\": \"Electronics\",\n        \"totalRevenue\": 309.4915\n    },\n    {\n        \"category\": \"Shoes\",\n        \"totalRevenue\": 916\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Total Revenue by Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/revenue/product?startDate=2024-01-29&endDate=2024-05-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"revenue",
+						"product"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-01-29"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-05-01"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Total Revenue by Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/revenue/product?startDate=2024-01-29&endDate=2024-05-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"revenue",
+								"product"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2024-01-29"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-05-01"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "130"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"82-GHUnjDgWiohVfAa2SX5IP/SNoDI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Apr 2025 00:53:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"productId\": \"P123\",\n        \"totalRevenue\": 916\n    },\n    {\n        \"productId\": \"P234\",\n        \"totalRevenue\": 309.4915\n    },\n    {\n        \"productId\": \"P789\",\n        \"totalRevenue\": 148.976\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Total Revenue by Region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/revenue/region?startDate=2024-01-29&endDate=2024-05-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"revenue",
+						"region"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-01-29"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-05-01"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Total Revenue by Region",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/revenue/region?startDate=2024-01-29&endDate=2024-05-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"revenue",
+								"region"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2024-01-29"
+								},
+								{
+									"key": "endDate",
+									"value": "2024-05-01"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "151"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"97-JE9FRhukr4Dm2K40+hAFjnkaNQQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Apr 2025 00:55:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"regionName\": \"Asia\",\n        \"totalRevenue\": 148.976\n    },\n    {\n        \"regionName\": \"North America\",\n        \"totalRevenue\": 309.4915\n    },\n    {\n        \"regionName\": \"South America\",\n        \"totalRevenue\": 916\n    }\n]"
+				}
+			]
+		}
+	]
+}
